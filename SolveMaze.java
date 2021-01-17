@@ -161,7 +161,8 @@ public class SolveMaze {
       for (int cols = 0; cols < rowSize; cols++) {
         if (boolList[rows][cols] == true) {
           solvedMaze[rows][cols] = '+';
-        } else if (boolList[rows][cols] == false && viewMaze[rows][cols] == '.') {
+        } else if (boolList[rows][cols] == false
+                   && viewMaze[rows][cols] == '.') {
           solvedMaze[rows][cols] = '.';
         } else {
           solvedMaze[rows][cols] = '#';
